@@ -1,0 +1,50 @@
+
+[+] General Parameters:
+Training data:	./data/train.txt
+Test data:	./data/test.txt
+Validation data:	./data/valid.txt
+Feature vector representation: Dense.
+Ranking method:	Random Forests
+Feature description file:	Unspecified. All features will be used.
+Train metric:	NDCG@10
+Test metric:	NDCG@10
+Feature normalization: No
+Model file: ./model/RF.txt
+
+[+] Random Forests's Parameters:
+No. of bags: 300
+Sub-sampling: 1.0
+Feature-sampling: 0.3
+No. of trees: 1
+No. of leaves: 100
+No. of threshold candidates: 256
+Learning rate: 0.1
+
+Reading feature file [./data/train.txt]: 0... Reading feature file [./data/train.txt]... [Done.]            
+(938 ranked lists, 9847 entries read)
+Reading feature file [./data/valid.txt]: 0... Reading feature file [./data/valid.txt]... [Done.]            
+(964 ranked lists, 9726 entries read)
+Reading feature file [./data/test.txt]: 0... Reading feature file [./data/test.txt]... [Done.]            
+(937 ranked lists, 9619 entries read)
+Initializing... [Done]
+------------------------------------
+Training starts...
+------------------------------------
+bag       | NDCG@10-B | NDCG@10-OOB | 
+------------------------------------
+b[1]      | 0.7323    | 
+b[2]      | 0.7042    | 
+b[3]      | 0.735     | 
+b[4]      | 0.7152    | 
+b[5]      | 0.7393    | 
+b[6]      | 0.7176    | 
+b[7]      | 0.74      | 
+b[8]      | 0.7432    | 
+b[9]      | 0.7248    | 
+b[10]     | 0.7259    | 
+b[11]     | 0.7475    | 
+b[12]     | 0.723     | 
+b[13]     | 0.7589    | 
+b[14]     | 0.7251    | 
+b[15]     | 0.748     | 
+b[16]     | 0.7493    | 
